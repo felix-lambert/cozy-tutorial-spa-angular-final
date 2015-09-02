@@ -1,7 +1,7 @@
 var bookmarks = require('./bookmarks');
 
 module.exports = {
-  'books': {
+  'bookmarks': {
     get: bookmarks.list
   },
   'add': {

@@ -1,6 +1,6 @@
 ## Cozy tutorial
 
-This is the starting point of the Cozy Tutorial. Check the repository branches  to see more advanced steps.
+This is the starting point of the Cozy Tutorial for AngularJS. Check the repository branches  to see more advanced steps.
 
 ## About Cozy
 

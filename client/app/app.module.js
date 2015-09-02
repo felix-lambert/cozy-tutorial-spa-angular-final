@@ -1,4 +1,4 @@
-angular.module('Books', [
+angular.module('Bookmarks', [
   'ngResource',
   'ngRoute'
 ]).config(appConfig);
