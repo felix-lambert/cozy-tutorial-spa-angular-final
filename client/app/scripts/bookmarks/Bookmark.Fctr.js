@@ -31,7 +31,7 @@ function Bookmark($http) {
   // Define your route depended to the name of your app
   function deleteBookmark() {
     var self = this;
-    return $http.get('/apps/tutorial-angularjs/delete/' + self._id).then(function(response) {
+    return $http.get('/api/delete/' + self._id).then(function(response) {
       return response;
     });
   }
@@ -39,7 +39,7 @@ function Bookmark($http) {
   // Define your route depended to the name of your app
   function addBookmark() {
     var self = this;
-    return $http.post('/apps/tutorial-angularjs/add', self._bookmark).then(function(response) {
+    return $http.post('/api/bookmark', self._bookmark).then(function(response) {
       self._bookmark = response.data;
       return response;
     });
@@ -48,7 +48,7 @@ function Bookmark($http) {
   // Define your route depended to the name of your app
   function getBookmarks() {
     var self = this;
-    return $http.get('/apps/tutorial-angularjs/bookmarks').then(function(response) {
+    return $http.get('/api/bookmarks').then(function(response) {
       self._bookList = response.data;
       return response;
     });

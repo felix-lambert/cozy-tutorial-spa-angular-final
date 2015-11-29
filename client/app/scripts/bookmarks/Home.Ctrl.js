@@ -25,7 +25,7 @@ function HomeAngCtrl($scope, $injector) {
       	};
 		bookmark.setBookmark(bookItem);
 		bookmark.addBookmark().then(function() {
-			vm.bookmarks.push(bookmark._bookmark);
+			activate();
 			vm.bookmark = defaultForm;
       		$scope.form.$setPristine();	
 		});
